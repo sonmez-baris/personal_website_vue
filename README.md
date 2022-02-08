@@ -1,4 +1,4 @@
-# Baris S
+# Baris Sonmez Personel Webpage.
 
 ## Project Status
 
