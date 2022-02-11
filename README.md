@@ -14,7 +14,7 @@ This repository contains only front-end design files made using vue.js and tailw
 
 ## Screen Shoot
 
-![Figma Screenshot](https://github.com/sonmez-baris/personal_website_vue/blob/main/public/screenshot.jpg)
+![Figma Screenshot](https://github.com/sonmez-baris/personal_website_vue/blob/main/public/img/screenshot.jpg)
 
 
 ## Usage
