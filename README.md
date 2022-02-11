@@ -1,6 +1,7 @@
 # Baris Sonmez Personel Webpage.
 
 ![last commit](https://img.shields.io/github/last-commit/sonmez-baris/personal_website_vue)
+
 ![status](https://img.shields.io/badge/status-not%20completed%20yet-yellow)
 
 ## Project Status
