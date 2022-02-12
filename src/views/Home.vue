@@ -1,6 +1,6 @@
 <template>
 
-  <div class="w-150 mx-auto border-l-2 border-r-2 border-gray-200 max-h-screen">
+  <div class="w-150 mx-auto border-l-2 border-r-2 border-gray-200 max-h">
 
     <TopBar msg="Bugün onların olsun, ama uğrunda çok uğraştığım gelecek benimdir!" />
 
@@ -18,30 +18,38 @@
       </div>
     </div>
 
-    <div class="flex flex-col px-2 mt-2">
+    <div class="px-2 mt-2">
 
       <div class="border-b-1 w-full">
         <h2 class="font-semibold text-bsonmezprimary">ne yaparım?</h2>
       </div>
       <div class="flex px-2 justify-between flex-row mt-6">
         <a href="#">
-        <div class="w-32 h-32 bg-cover bg-bsonmezprimary p-1 rounded-full text-white font-medium text-center inline-flex items-center">
-          web uygulamalar
+        <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/web-developing.jpg') + ')'}" >
+          <div class="w-32 h-32 bg-cover bg-bsonmezprimary opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center">
+            web uygulamalar
+          </div>
         </div>
         </a>
         <a href="#">
-        <div class="w-32 h-32 bg-cover bg-bsonmezprimary p-1 rounded-full text-white font-medium text-center inline-flex items-center">
-          mobil uygulamalar
+        <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/mobile-developing.jpg') + ')'}" >
+          <div class="w-32 h-32 bg-cover bg-bsonmezprimary opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center">
+            mobil uygulamalar
+          </div>
         </div>
         </a>
         <a href="#">
-        <div class="w-32 h-32 bg-cover bg-bsonmezprimary p-1 rounded-full text-white font-medium text-center inline-flex items-center">
-          gömülü sistemler
+        <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/embedded-systems.jpg') + ')'}" >
+          <div class="w-32 h-32 bg-cover bg-bsonmezprimary opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center">
+            gömülü sistemler
+          </div>
         </div>
         </a>
         <a href="#">
-        <div class="w-32 h-32 bg-cover bg-bsonmezprimary p-1 rounded-full text-white font-medium text-center inline-flex items-center">
-          grafik tasarım
+        <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/graphic-design.jpg') + ')'}" >
+          <div class="w-32 h-32 bg-cover bg-bsonmezprimary opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center">
+            grafik tasarım
+          </div>
         </div>
         </a>
       </div>
@@ -78,21 +86,85 @@
 
     </div>
 
-    <div class="flex flex-col px-2 mt-10">
+    <div class="px-2 mt-10">
       <div class="border-b-1 w-full">
         <h2 class="font-semibold text-bsonmezprimary">blogtan...</h2>
       </div>
-      <div class="flex px-2 justify-between flex-row mt-6">
-        coming soon...
+      <div class="grid grid-cols-3 px-2 mt-6 gap-2">
+        <a href="#">
+        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+          <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
+          <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
+          <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
+        </div>
+        </a>
+        <a href="#">
+        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+          <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
+          <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
+          <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
+        </div>
+        </a>
+        <a href="#">
+        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+          <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
+          <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
+          <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
+        </div>
+        </a>
+        <a href="#">
+        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+          <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
+          <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
+          <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
+        </div>
+        </a>
+        <a href="#">
+        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+          <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
+          <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
+          <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
+        </div>
+        </a>
+        <a href="#">
+        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+          <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
+          <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
+          <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
+        </div>
+        </a>
       </div>
     </div>
 
-    <div class="flex flex-col px-2 mt-10">
+    <div class="px-2 mt-10">
       <div class="border-b-1 w-full">
         <h2 class="font-semibold text-bsonmezprimary">bazı referanslar</h2>
       </div>
-      <div class="flex px-2 justify-between flex-row mt-6">
-        coming soon...
+      <div class="grid grid-cols-4 justify-between items-stretch px-2 mt-6 gap-2">
+        <div class="rounded-xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/web01.jpg') + ')'}" >
+          <div class="bg-bsonmezsecondary bg-opacity-90 h-full py-6 rounded-xl">
+            <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;web&gt;</p>
+            <h5 class="mt-4 text-sm text-center font-semibold">özlem<br>özyün</h5>
+          </div>
+        </div>
+        <div class="rounded-xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/embed01.jpg') + ')'}" >
+          <div class="bg-bsonmezsecondary bg-opacity-90 h-full py-6 rounded-xl">
+            <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;embed&gt;</p>
+            <h5 class="mt-4 text-sm text-center font-semibold">jagbt</h5>
+          </div>
+        </div>
+        <div class="rounded-xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/mobile01.jpg') + ')'}" >
+          <div class="bg-bsonmezsecondary bg-opacity-90 h-full py-6 rounded-xl">
+            <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;mobile&gt;</p>
+            <h5 class="mt-4 text-sm text-center font-semibold">mert<br>istihbarat</h5>
+          </div>
+        </div>
+        <div class="rounded-xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/graphic01.jpg') + ')'}" >
+          <div class="bg-bsonmezsecondary bg-opacity-90 h-full py-6 rounded-xl">
+            <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;graphic&gt;</p>
+            <h5 class="mt-4 text-sm text-center font-semibold">cpr<br>mobil</h5>
+          </div>
+        </div>
       </div>
     </div>
 
