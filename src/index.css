@@ -4,10 +4,10 @@
 
 @layer components {
   .top-contact-item {
-    @apply text-gray-400 text-xs mr-3 hover:text-gray-800 transition-colors duration-300
+    @apply text-gray-400 text-xs mr-3 hover:text-gray-800 dark:hover:text-gray-100 transition-colors duration-300 
   }
   .service-circle {
-    @apply w-32 h-32 bg-cover bg-bsonmezprimary dark:bg-gray-800 opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center
+    @apply w-36 h-36 md:w-32 md:h-32 bg-cover bg-bsonmezprimary dark:bg-gray-800 opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center
   }
   .skill-tag {
     @apply text-white text-xs bg-bsonmezprimary dark:bg-gray-800 px-2 py-1 rounded-full mr-1 mb-1

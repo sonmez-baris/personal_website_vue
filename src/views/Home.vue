@@ -1,6 +1,6 @@
 <template>
 
-  <div class="w-150 mx-auto border-l-2 border-r-2 border-gray-200 dark:border-gray-700 max-h">
+  <div class="w-full md:w-150 mx-auto border-l-2 border-r-2 border-gray-200 dark:border-gray-700 max-h">
 
     <TopBar msg="Bugün onların olsun, ama uğrunda çok uğraştığım gelecek benimdir!" />
 
@@ -9,7 +9,7 @@
       <div class="ml-2">
         <p class="text-sm">Merhaba, ben Barış Sönmez.<br>
         Antalya’da yaşayan, full stack web & mobil uygulama geliştiricisiyim.</p>
-        <p>
+        <p class="flex flex-wrap">
           <a href="" class="top-contact-item">&lt;github&gt;</a>
           <a href="" class="top-contact-item">&lt;twitter&gt;</a>
           <a href="" class="top-contact-item">&lt;linkedin&gt;</a>
@@ -23,30 +23,30 @@
       <div class="border-b-1 dark:border-gray-700 w-full">
         <h2 class="font-semibold text-bsonmezprimary dark:text-gray-300">ne yaparım?</h2>
       </div>
-      <div class="flex px-2 justify-between flex-row mt-6">
+      <div class="grid grid-cols-2 gap-2 md:grid-cols-4 px-2 justify-items-center mt-6">
         <a href="#">
-        <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/web-developing.jpg') + ')'}" >
+        <div class="w-36 h-36 md:w-32 md:h-32 rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/web-developing.jpg') + ')'}" >
           <div class="service-circle">
             web uygulamalar
           </div>
         </div>
         </a>
         <a href="#">
-        <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/mobile-developing.jpg') + ')'}" >
+        <div class="w-36 h-36 md:w-32 md:h-32 rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/mobile-developing.jpg') + ')'}" >
           <div class="service-circle">
             mobil uygulamalar
           </div>
         </div>
         </a>
         <a href="#">
-        <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/embedded-systems.jpg') + ')'}" >
+        <div class="w-36 h-36 md:w-32 md:h-32 rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/embedded-systems.jpg') + ')'}" >
           <div class="service-circle">
             gömülü sistemler
           </div>
         </div>
         </a>
         <a href="#">
-        <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/graphic-design.jpg') + ')'}" >
+        <div class="w-36 h-36 md:w-32 md:h-32 rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/graphic-design.jpg') + ')'}" >
           <div class="service-circle">
             grafik tasarım
           </div>
@@ -90,7 +90,7 @@
       <div class="border-b-1 dark:border-gray-700 w-full">
         <h2 class="font-semibold text-bsonmezprimary">blogtan...</h2>
       </div>
-      <div class="grid grid-cols-3 px-2 mt-6 gap-2">
+      <div class="grid grid-cols-2 md:grid-cols-3 px-2 mt-6 gap-2">
         <a href="#">
         <div class="bg-bsonmezsecondary dark:bg-gray-800 px-2 py-3 rounded-xl">
           <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
@@ -140,30 +140,38 @@
       <div class="border-b-1 dark:border-gray-700 w-full">
         <h2 class="font-semibold text-bsonmezprimary">bazı referanslar</h2>
       </div>
-      <div class="grid grid-cols-4 justify-between items-stretch px-2 mt-6 gap-2">
+      <div class="grid grid-cols-2 md:grid-cols-4 justify-items-between items-stretch px-2 mt-6 gap-2">
         <div class="rounded-2xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/web01.jpg') + ')'}" >
-          <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
-            <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;web&gt;</p>
-            <h5 class="mt-4 text-sm text-center font-semibold">özlem<br>özyün</h5>
-          </div>
+          <a href="">
+            <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
+              <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;web&gt;</p>
+              <h5 class="mt-4 text-sm text-center font-semibold">özlem<br>özyün</h5>
+            </div>
+          </a>
         </div>
         <div class="rounded-2xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/embed01.jpg') + ')'}" >
-          <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
-            <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;embed&gt;</p>
-            <h5 class="mt-4 text-sm text-center font-semibold">jagbt</h5>
-          </div>
+          <a href="">
+            <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
+              <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;embed&gt;</p>
+              <h5 class="mt-4 text-sm text-center font-semibold">jagbt</h5>
+            </div>
+          </a>
         </div>
         <div class="rounded-2xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/mobile01.jpg') + ')'}" >
-          <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
-            <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;mobile&gt;</p>
-            <h5 class="mt-4 text-sm text-center font-semibold">mert<br>istihbarat</h5>
-          </div>
+          <a href="">
+            <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
+              <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;mobile&gt;</p>
+              <h5 class="mt-4 text-sm text-center font-semibold">mert<br>istihbarat</h5>
+            </div>
+          </a>
         </div>
         <div class="rounded-2xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/graphic01.jpg') + ')'}" >
-          <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
-            <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;graphic&gt;</p>
-            <h5 class="mt-4 text-sm text-center font-semibold">cpr<br>mobil</h5>
-          </div>
+          <a href="">
+            <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
+              <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;graphic&gt;</p>
+              <h5 class="mt-4 text-sm text-center font-semibold">cpr<br>mobil</h5>
+            </div>
+          </a>
         </div>
       </div>
     </div>
