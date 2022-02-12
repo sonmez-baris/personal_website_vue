@@ -7,9 +7,9 @@
 
 <script>
 export default {
-    name: 'TopBar',
-    props: {
-        msg: String
-    }
+  name: 'TopBar',
+  props: {
+    msg: String
+  }
 };
 </script>
