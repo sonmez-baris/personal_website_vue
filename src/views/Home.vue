@@ -1,6 +1,6 @@
 <template>
 
-  <div class="w-150 mx-auto border-l-2 border-r-2 border-gray-200 max-h">
+  <div class="w-150 mx-auto border-l-2 border-r-2 border-gray-200 dark:border-gray-700 max-h">
 
     <TopBar msg="Bugün onların olsun, ama uğrunda çok uğraştığım gelecek benimdir!" />
 
@@ -10,124 +10,124 @@
         <p class="text-sm">Merhaba, ben Barış Sönmez.<br>
         Antalya’da yaşayan, full stack web & mobil uygulama geliştiricisiyim.</p>
         <p>
-          <a href="" class="text-gray-400 text-xs mr-3 hover:text-gray-800 transition-colors duration-300">&lt;github&gt;</a>
-          <a href="" class="text-gray-400 text-xs mr-3 hover:text-gray-800 transition-colors duration-300">&lt;twitter&gt;</a>
-          <a href="" class="text-gray-400 text-xs mr-3 hover:text-gray-800 transition-colors duration-300">&lt;linkedin&gt;</a>
-          <a href="" class="text-gray-400 text-xs mr-3 hover:text-gray-800 transition-colors duration-300">&lt;instagram&gt;</a>
+          <a href="" class="top-contact-item">&lt;github&gt;</a>
+          <a href="" class="top-contact-item">&lt;twitter&gt;</a>
+          <a href="" class="top-contact-item">&lt;linkedin&gt;</a>
+          <a href="" class="top-contact-item">&lt;instagram&gt;</a>
         </p>
       </div>
     </div>
 
     <div class="px-2 mt-2">
 
-      <div class="border-b-1 w-full">
-        <h2 class="font-semibold text-bsonmezprimary">ne yaparım?</h2>
+      <div class="border-b-1 dark:border-gray-700 w-full">
+        <h2 class="font-semibold text-bsonmezprimary dark:text-gray-300">ne yaparım?</h2>
       </div>
       <div class="flex px-2 justify-between flex-row mt-6">
         <a href="#">
         <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/web-developing.jpg') + ')'}" >
-          <div class="w-32 h-32 bg-cover bg-bsonmezprimary opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center">
+          <div class="service-circle">
             web uygulamalar
           </div>
         </div>
         </a>
         <a href="#">
         <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/mobile-developing.jpg') + ')'}" >
-          <div class="w-32 h-32 bg-cover bg-bsonmezprimary opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center">
+          <div class="service-circle">
             mobil uygulamalar
           </div>
         </div>
         </a>
         <a href="#">
         <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/embedded-systems.jpg') + ')'}" >
-          <div class="w-32 h-32 bg-cover bg-bsonmezprimary opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center">
+          <div class="service-circle">
             gömülü sistemler
           </div>
         </div>
         </a>
         <a href="#">
         <div class="rounded-full bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/graphic-design.jpg') + ')'}" >
-          <div class="w-32 h-32 bg-cover bg-bsonmezprimary opacity-90 p-1 rounded-full text-white font-medium text-center inline-flex items-center">
+          <div class="service-circle">
             grafik tasarım
           </div>
         </div>
         </a>
       </div>
       <div class="flex px-2 flex-row mt-6 flex-wrap w-full">
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">php</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">javascript</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">flutter</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">dart</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">html</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">css</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">laravel</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">codeigniter</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">sql</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">vue</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">tailwind</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">bootstrap</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">aermod</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">illustrator</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">photoshop</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">fireworks</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">premiere</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">kicad</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">easyeda</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">figma</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">avr</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">surfer</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">autocad</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">blender</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">cinema4d</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">netcad</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">pwa</span>
-        <span class="text-white text-xs bg-bsonmezprimary px-2 py-1 rounded-full mr-1 mb-1">jquery</span>
+        <span class="skill-tag">php</span>
+        <span class="skill-tag">javascript</span>
+        <span class="skill-tag">flutter</span>
+        <span class="skill-tag">dart</span>
+        <span class="skill-tag">html</span>
+        <span class="skill-tag">css</span>
+        <span class="skill-tag">laravel</span>
+        <span class="skill-tag">codeigniter</span>
+        <span class="skill-tag">sql</span>
+        <span class="skill-tag">vue</span>
+        <span class="skill-tag">tailwind</span>
+        <span class="skill-tag">bootstrap</span>
+        <span class="skill-tag">aermod</span>
+        <span class="skill-tag">illustrator</span>
+        <span class="skill-tag">photoshop</span>
+        <span class="skill-tag">fireworks</span>
+        <span class="skill-tag">premiere</span>
+        <span class="skill-tag">kicad</span>
+        <span class="skill-tag">easyeda</span>
+        <span class="skill-tag">figma</span>
+        <span class="skill-tag">avr</span>
+        <span class="skill-tag">surfer</span>
+        <span class="skill-tag">autocad</span>
+        <span class="skill-tag">blender</span>
+        <span class="skill-tag">cinema4d</span>
+        <span class="skill-tag">netcad</span>
+        <span class="skill-tag">pwa</span>
+        <span class="skill-tag">jquery</span>
       </div>
 
     </div>
 
     <div class="px-2 mt-10">
-      <div class="border-b-1 w-full">
+      <div class="border-b-1 dark:border-gray-700 w-full">
         <h2 class="font-semibold text-bsonmezprimary">blogtan...</h2>
       </div>
       <div class="grid grid-cols-3 px-2 mt-6 gap-2">
         <a href="#">
-        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+        <div class="bg-bsonmezsecondary dark:bg-gray-800 px-2 py-3 rounded-xl">
           <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
           <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
           <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
         </div>
         </a>
         <a href="#">
-        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+        <div class="bg-bsonmezsecondary dark:bg-gray-800 px-2 py-3 rounded-xl">
           <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
           <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
           <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
         </div>
         </a>
         <a href="#">
-        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+        <div class="bg-bsonmezsecondary dark:bg-gray-800 px-2 py-3 rounded-xl">
           <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
           <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
           <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
         </div>
         </a>
         <a href="#">
-        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+        <div class="bg-bsonmezsecondary dark:bg-gray-800 px-2 py-3 rounded-xl">
           <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
           <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
           <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
         </div>
         </a>
         <a href="#">
-        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+        <div class="bg-bsonmezsecondary dark:bg-gray-800 px-2 py-3 rounded-xl">
           <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
           <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
           <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
         </div>
         </a>
         <a href="#">
-        <div class="bg-bsonmezsecondary px-2 py-3 rounded-xl">
+        <div class="bg-bsonmezsecondary dark:bg-gray-800 px-2 py-3 rounded-xl">
           <p class="text-bsonmezprimary"><font-awesome-icon :icon="['fa-solid', 'code']" /></p>
           <h5 class="text-sm font-semibold mb-2">Aermod INP Dosyası Çalıştırmaya H...</h5>
           <p class="text-sm">“Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık” başlıklı yazımda...</p>
@@ -137,30 +137,30 @@
     </div>
 
     <div class="px-2 mt-10">
-      <div class="border-b-1 w-full">
+      <div class="border-b-1 dark:border-gray-700 w-full">
         <h2 class="font-semibold text-bsonmezprimary">bazı referanslar</h2>
       </div>
       <div class="grid grid-cols-4 justify-between items-stretch px-2 mt-6 gap-2">
-        <div class="rounded-xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/web01.jpg') + ')'}" >
-          <div class="bg-bsonmezsecondary bg-opacity-90 h-full py-6 rounded-xl">
+        <div class="rounded-2xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/web01.jpg') + ')'}" >
+          <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
             <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;web&gt;</p>
             <h5 class="mt-4 text-sm text-center font-semibold">özlem<br>özyün</h5>
           </div>
         </div>
-        <div class="rounded-xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/embed01.jpg') + ')'}" >
-          <div class="bg-bsonmezsecondary bg-opacity-90 h-full py-6 rounded-xl">
+        <div class="rounded-2xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/embed01.jpg') + ')'}" >
+          <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
             <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;embed&gt;</p>
             <h5 class="mt-4 text-sm text-center font-semibold">jagbt</h5>
           </div>
         </div>
-        <div class="rounded-xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/mobile01.jpg') + ')'}" >
-          <div class="bg-bsonmezsecondary bg-opacity-90 h-full py-6 rounded-xl">
+        <div class="rounded-2xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/mobile01.jpg') + ')'}" >
+          <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
             <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;mobile&gt;</p>
             <h5 class="mt-4 text-sm text-center font-semibold">mert<br>istihbarat</h5>
           </div>
         </div>
-        <div class="rounded-xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/graphic01.jpg') + ')'}" >
-          <div class="bg-bsonmezsecondary bg-opacity-90 h-full py-6 rounded-xl">
+        <div class="rounded-2xl bg-no-repeat bg-cover" :style="{'background-image': 'url(' + require('@/assets/img/graphic01.jpg') + ')'}" >
+          <div class="bg-bsonmezsecondary dark:bg-gray-800 bg-opacity-90 h-full py-6 rounded-xl">
             <p class="text-bsonmezprimary w-full text-center text-sm font-semibold">&lt;graphic&gt;</p>
             <h5 class="mt-4 text-sm text-center font-semibold">cpr<br>mobil</h5>
           </div>

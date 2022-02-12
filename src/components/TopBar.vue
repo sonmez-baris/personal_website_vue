@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col border-b-2 py-1">
-      <div class="text-xs text-right px-2">{{ msg }}</div>
-      <div class="text-xs text-right px-2">Tesla</div>
+  <div class="flex flex-col border-b-2 dark:border-gray-700 py-1">
+      <div class="text-xs text-right px-2 dark:text-gray-200">{{ msg }}</div>
+      <div class="text-xs text-right px-2 dark:text-gray-200">Tesla</div>
   </div>
 </template>
 
