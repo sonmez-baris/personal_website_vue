@@ -1,9 +1,5 @@
 <template>
 
-  <div class="w-full md:w-150 mx-auto border-l-2 border-r-2 border-gray-200 dark:border-gray-700 max-h">
-
-    <TopBar msg="Bugün onların olsun, ama uğrunda çok uğraştığım gelecek benimdir!" />
-
     <div class="flex px-2 py-4">
       <div class="w-20 h-20 flex-shrink-0"><img src="@/assets/profile.jpg" class="w-20 h-20 object-cover rounded-full" alt=""></div>
       <div class="ml-2">
@@ -176,22 +172,4 @@
       </div>
     </div>
 
-    <Footer date="2022" />
-
-  </div>
-
 </template>
-
-<script>
-
-import TopBar from '@/components/TopBar.vue';
-import Footer from '@/components/Footer.vue';
-
-export default {
-  name: 'App',
-  components: {
-    TopBar,
-    Footer
-  }
-};
-</script>
