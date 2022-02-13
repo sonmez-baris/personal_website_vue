@@ -22,61 +22,61 @@
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">Aermod INP Dosyası Çalıştırmaya Hazırlık.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">Aermod INP Dosyası ve Kod Yapısı.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">Uzun Yılların Ardından.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">AERMOD'a Giriş.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">Aermod INP Dosyası Çalıştırmaya Hazırlık.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">Aermod INP Dosyası ve Kod Yapısı.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">Uzun Yılların Ardından.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
       <router-link to="/">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">AERMOD'a Giriş.</p>
-        <p class="text-xs text-gray-600"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
+        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
     </div>
