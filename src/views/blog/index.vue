@@ -19,7 +19,7 @@
 
     <div class="flex flex-col gap-2">
 
-      <router-link to="/">
+      <router-link to="/blog/post">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
         <p class="font-semibold">Aermod INP Dosyası Çalıştırmaya Hazırlık.</p>
         <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
@@ -105,3 +105,9 @@
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  name: 'Blog'
+};
+</script>
