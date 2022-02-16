@@ -2,29 +2,29 @@
 
   <div class="flex px-2">
     <ul class="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 gap-1">
-      <router-link to="/portfolio">
+      <router-link :to="{path: '/portfolio', query: { type: 'all' }}">
       <li class="nav-item" role="presentation">
-        <span class="nav-link block font-medium text-xs border-1 px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active">tümü</span>
+        <span class="portfolio-tab active">tümü</span>
       </li>
       </router-link>
-      <router-link to="/portfolio/web">
+      <router-link :to="{path: '/portfolio', query: { type: 'web' }}">
       <li class="nav-item" role="presentation">
-        <span class="nav-link block font-medium text-xs border-1 px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active">web</span>
+        <span class="portfolio-tab">web</span>
       </li>
       </router-link>
-      <router-link to="/portfolio/mobil">
+      <router-link :to="{path: '/portfolio', query: { type: 'mobile' }}">
       <li class="nav-item" role="presentation">
-        <span class="nav-link block font-medium text-xs border-1 px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active">mobil</span>
+        <span class="portfolio-tab">mobil</span>
       </li>
       </router-link>
-      <router-link to="/portfolio/elektronik">
+      <router-link :to="{path: '/portfolio', query: { type: 'embed' }}">
       <li class="nav-item" role="presentation">
-        <span class="nav-link block font-medium text-xs border-1 px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active">elektronik</span>
+        <span class="portfolio-tab">elektronik</span>
       </li>
       </router-link>
-      <router-link to="/portfolio/grafik">
+      <router-link :to="{path: '/portfolio', query: { type: 'graphic' }}">
       <li class="nav-item" role="presentation">
-        <span class="nav-link block font-medium text-xs border-1 px-6 py-3 my-2 hover:border-transparent hover:bg-gray-100 focus:border-transparent active">grafik</span>
+        <span class="portfolio-tab">grafik</span>
       </li>
       </router-link>
     </ul>
