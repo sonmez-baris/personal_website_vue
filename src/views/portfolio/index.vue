@@ -2,27 +2,27 @@
 
   <div class="flex px-2">
     <ul class="nav nav-tabs flex flex-col md:flex-row flex-wrap list-none border-b-0 pl-0 gap-1">
-      <router-link :to="{path: '/portfolio', query: { type: 'all' }}">
+      <router-link :to="{path: '/portfolio', query: { type: 'all' }}" @click="getParam">
       <li class="nav-item" role="presentation">
         <span class="portfolio-tab active">tümü</span>
       </li>
       </router-link>
-      <router-link :to="{path: '/portfolio', query: { type: 'web' }}">
+      <router-link :to="{path: '/portfolio', query: { type: 'web' }}" @click="getParam">
       <li class="nav-item" role="presentation">
         <span class="portfolio-tab">web</span>
       </li>
       </router-link>
-      <router-link :to="{path: '/portfolio', query: { type: 'mobile' }}">
+      <router-link :to="{path: '/portfolio', query: { type: 'mobile' }}" @click="getParam">
       <li class="nav-item" role="presentation">
         <span class="portfolio-tab">mobil</span>
       </li>
       </router-link>
-      <router-link :to="{path: '/portfolio', query: { type: 'embed' }}">
+      <router-link :to="{path: '/portfolio', query: { type: 'embed' }}" @click="getParam">
       <li class="nav-item" role="presentation">
         <span class="portfolio-tab">elektronik</span>
       </li>
       </router-link>
-      <router-link :to="{path: '/portfolio', query: { type: 'graphic' }}">
+      <router-link :to="{path: '/portfolio', query: { type: 'graphic' }}" @click="getParam">
       <li class="nav-item" role="presentation">
         <span class="portfolio-tab">grafik</span>
       </li>
