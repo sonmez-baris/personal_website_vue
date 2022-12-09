@@ -1,6 +1,6 @@
 <template>
   <div class="flex px-2 py-4">
-    <div class="w-20 h-20 flex-shrink-0"><img :src="imageUrl" class="w-20 h-20 object-cover rounded-full" alt=""></div>
+    <div class="w-20 h-20 flex-shrink-0"><img :src="profileImg" class="w-20 h-20 object-cover rounded-full" alt=""></div>
     <div class="ml-2">
       <p class="text-sm">Merhaba, ben Barış Sönmez.<br>
       Antalya’da yaşayan, full stack web & mobil uygulama geliştiricisiyim.</p>
@@ -12,11 +12,29 @@
 </template>
 uy
 <script>
+import { computed, ref, onMounted } from 'vue';
+import { useStore } from 'vuex';
+
 export default {
   name: 'AboutMe',
-  props: {
-    imageUrl: String,
-    socials: Array
+  setup() {
+    const store = useStore();
+    const profileImg = ref(null);
+
+    const setSocials = () => {
+      store.dispatch('setSocials');
+    };
+    setSocials();
+
+    onMounted(() => {
+      profileImg.value = store.state.apiBaseURL + 'assets/img/profile.jpg';
+    });
+
+    const socials = computed(() => {
+      return store.getters.getSocials;
+    });
+
+    return { socials, profileImg };
   }
 };
 </script>

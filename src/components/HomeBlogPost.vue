@@ -24,6 +24,11 @@ export default {
 
     const store = useStore();
 
+    const setLastBlogs = () => {
+      store.dispatch('setLastBlogs');
+    };
+    setLastBlogs();
+
     const lastBlogs = computed(() => {
       return store.getters.lastBlogs;
     });

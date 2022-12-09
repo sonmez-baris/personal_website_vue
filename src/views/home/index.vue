@@ -1,7 +1,6 @@
 <template>
-  <AboutMe :imageUrl="profileImg" :socials="socials" />
+  <AboutMe />
   <div class="px-2 mt-2">
-
     <div class="border-b-1 dark:border-gray-700 w-full">
       <h2 class="font-semibold text-bsonmezprimary dark:text-gray-300">ne yaparım?</h2>
     </div>
@@ -9,9 +8,8 @@
       <WhatIDoItem />
     </div>
     <div class="flex px-2 flex-row mt-6 flex-wrap w-full">
-      <span class="skill-tag" v-for="(skill, index) in skills" :key="index">{{skill.title}}</span>
+      <Skill />
     </div>
-
   </div>
 
   <div class="px-2 mt-10">
@@ -35,13 +33,11 @@
 </template>
 
 <script>
-import { reactive, computed } from 'vue';
 import WhatIDoItem from '@/components/WhatIDoItem.vue';
 import AboutMe from '@/components/AboutMe.vue';
 import HomeBlogPost from '@/components/HomeBlogPost.vue';
 import HomeReference from '@/components/HomeReference.vue';
-import profileImg from '@/assets/profile.jpg';
-import { useStore } from 'vuex';
+import Skill from '@/components/Skill.vue';
 
 export default {
   name: 'Home',
@@ -49,35 +45,8 @@ export default {
     WhatIDoItem,
     AboutMe,
     HomeBlogPost,
-    HomeReference
-  },
-  setup() {
-    const socials = reactive([
-      { name: 'github', url: 'https://github.com/sonmez-baris' },
-      { name: 'twitter', url: 'https://twitter.com/sonmezbaris' },
-      { name: 'linkedin', url: 'https://www.linkedin.com/in/barissonmez/' },
-      { name: 'medium', url: 'https://medium.com/@sonmez.baris' }
-    ]);
-
-    const store = useStore();
-
-    // Actions
-    const setLastBlogs = () => {
-      store.dispatch('setLastBlogs');
-    };
-    setLastBlogs();
-
-    const setTags = () => {
-      store.dispatch('setTags');
-    };
-    setTags();
-
-    // Getters
-    const skills = computed(() => {
-      return store.getters.getTags;
-    });
-
-    return { skills, profileImg, socials };
+    HomeReference,
+    Skill
   }
 };
 </script>
