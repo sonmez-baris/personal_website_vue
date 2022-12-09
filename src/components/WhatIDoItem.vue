@@ -1,14 +1,30 @@
 <template>
-  <a href="#" v-for="(service, index) in services" :key="index">
+  <router-link :to="service.url" v-for="(service, index) in services" :key="index">
     <div class="service-circle">
-      {{service}}
+      {{service.title}}
     </div>
-  </a>
+  </router-link>
 </template>
 
 <script>
+import { useStore } from 'vuex';
+import { computed } from 'vue';
+
 export default {
   name: 'WhatIDoItem',
-  props: ['services']
+  setup() {
+    const store = useStore();
+
+    const setHomeServices = () => {
+      store.dispatch('setHomeServices');
+    };
+    setHomeServices();
+
+    const services = computed(() => {
+      return store.getters.getHomeServices;
+    });
+
+    return { services };
+  }
 };
 </script>
