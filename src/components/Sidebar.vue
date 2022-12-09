@@ -9,7 +9,7 @@
       </div>
       </router-link>
 
-      <router-link to="/profil">
+      <router-link to="/hakkimda">
       <div class="w-8 h-8 inline-flex items-center justify-center text-center text-xl">
         <svg id="icon" xmlns="http://www.w3.org/2000/svg" class="fill-current text-bsonmezprimary dark:text-gray-300" width="32" height="32" viewBox="0 0 32 32">
           <path d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"/>
@@ -77,7 +77,7 @@
     </div>
     </router-link>
 
-    <router-link to="/profil">
+    <router-link to="/hakkimda">
     <div class="w-8 h-8 inline-flex items-center justify-center text-center text-xl">
       <svg id="icon" xmlns="http://www.w3.org/2000/svg" class="fill-current text-bsonmezprimary dark:text-gray-300" width="32" height="32" viewBox="0 0 32 32">
         <path d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"/>
