@@ -8,7 +8,7 @@ const routes = [
     component: Home
   },
   {
-    path: '/profile',
+    path: '/profil',
     name: 'Profile',
     component: () => import(/* webpackChunkName: "profile" */ '../views/profile')
   },
@@ -23,9 +23,19 @@ const routes = [
     component: () => import(/* webpackChunkName: "blog-post" */ '../views/blog/post.vue')
   },
   {
-    path: '/portfolio',
+    path: '/hizmetler/:slug',
+    name: 'ServiceDetail',
+    component: () => import(/* webpackChunkName: "blog-post" */ '../views/services/service.vue')
+  },
+  {
+    path: '/portfolyo',
     name: 'Portfolio',
     component: () => import(/* webpackChunkName: "portfolio" */ '../views/portfolio')
+  },
+  {
+    path: '/portfolyo/:slug',
+    name: 'PortfolioDetail',
+    component: () => import(/* webpackChunkName: "blog-post" */ '../views/portfolio/detail.vue')
   },
   {
     path: '/lab',
@@ -33,7 +43,7 @@ const routes = [
     component: () => import(/* webpackChunkName: "lab" */ '../views/lab')
   },
   {
-    path: '/contact',
+    path: '/iletisim',
     name: 'Contact',
     component: () => import(/* webpackChunkName: "contact" */ '../views/contact')
   }
