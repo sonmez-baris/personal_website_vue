@@ -9,7 +9,7 @@
       </div>
       </router-link>
 
-      <router-link to="/profile">
+      <router-link to="/profil">
       <div class="w-8 h-8 inline-flex items-center justify-center text-center text-xl">
         <svg id="icon" xmlns="http://www.w3.org/2000/svg" class="fill-current text-bsonmezprimary dark:text-gray-300" width="32" height="32" viewBox="0 0 32 32">
           <path d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"/>
@@ -28,7 +28,7 @@
       </div>
       </router-link>
 
-      <router-link to="/portfolio">
+      <router-link to="/portfolyo">
       <div class="w-8 h-8 inline-flex items-center justify-center text-center text-xl">
         <svg id="icon" xmlns="http://www.w3.org/2000/svg" class="fill-current text-bsonmezprimary dark:text-gray-300" width="32" height="32" viewBox="0 0 32 32">
           <path d="M28,10H22V6a2,2,0,0,0-2-2H12a2,2,0,0,0-2,2v4H4a2,2,0,0,0-2,2V26a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V12A2,2,0,0,0,28,10ZM12,6h8v4H12ZM4,26V12H28V26Z"/>
@@ -44,7 +44,7 @@
       </div>
       </router-link>
 
-      <router-link to="/contact">
+      <router-link to="/iletisim">
       <div class="w-8 h-8 inline-flex items-center justify-center text-center text-xl">
         <svg id="icon" xmlns="http://www.w3.org/2000/svg" class="fill-current text-bsonmezprimary dark:text-gray-300" width="32" height="32" viewBox="0 0 32 32">
           <path d="M28,6H4A2,2,0,0,0,2,8V24a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V8A2,2,0,0,0,28,6ZM25.8,8,16,14.78,6.2,8ZM4,24V8.91l11.43,7.91a1,1,0,0,0,1.14,0L28,8.91V24Z" transform="translate(0)"/>
@@ -77,7 +77,7 @@
     </div>
     </router-link>
 
-    <router-link to="/profile">
+    <router-link to="/profil">
     <div class="w-8 h-8 inline-flex items-center justify-center text-center text-xl">
       <svg id="icon" xmlns="http://www.w3.org/2000/svg" class="fill-current text-bsonmezprimary dark:text-gray-300" width="32" height="32" viewBox="0 0 32 32">
         <path d="M16,4a5,5,0,1,1-5,5,5,5,0,0,1,5-5m0-2a7,7,0,1,0,7,7A7,7,0,0,0,16,2Z"/>
@@ -94,7 +94,7 @@
     </div>
     </router-link>
 
-    <router-link to="/contact">
+    <router-link to="/iletisim">
     <div class="w-8 h-8 inline-flex items-center justify-center text-center text-xl">
       <svg id="icon" xmlns="http://www.w3.org/2000/svg" class="fill-current text-bsonmezprimary dark:text-gray-300" width="32" height="32" viewBox="0 0 32 32">
         <path d="M28,6H4A2,2,0,0,0,2,8V24a2,2,0,0,0,2,2H28a2,2,0,0,0,2-2V8A2,2,0,0,0,28,6ZM25.8,8,16,14.78,6.2,8ZM4,24V8.91l11.43,7.91a1,1,0,0,0,1.14,0L28,8.91V24Z" transform="translate(0)"/>
@@ -119,22 +119,26 @@
 </template>
 
 <script>
+import { onMounted } from 'vue';
 export default {
   name: 'Sidebar',
-  methods: {
-    darkMode() {
+  setup() {
+    const darkMode = () => {
       document.documentElement.classList.toggle('dark');
       if (document.documentElement.classList.contains('dark')) {
         localStorage.setItem('dark', 'true');
       } else {
         localStorage.removeItem('dark');
       }
-    }
-  },
-  mounted() {
-    if (localStorage.getItem('dark') === 'true') {
-      document.documentElement.classList.add('dark');
-    }
+    };
+
+    onMounted(() => {
+      if (localStorage.getItem('dark') === 'true') {
+        document.documentElement.classList.add('dark');
+      }
+    });
+
+    return { darkMode };
   }
 };
 </script>
