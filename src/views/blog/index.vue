@@ -3,111 +3,87 @@
 
     <div class="flex flex-row flex-wrap md:flex-nowrap gap-3 py-3">
       <div class="w-full">
-        <input type="text" class="px-2 py-1 border-1 rounded-md placeholder-gray-600 w-full text-sm dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-300" placeholder="İçerik ara...">
+        <input type="text" class="px-2 py-1 border-1 rounded-md placeholder-gray-600 w-full text-sm dark:bg-gray-600 dark:border-gray-500 dark:placeholder-gray-300" placeholder="İçerik ara..." v-model="searchPost">
       </div>
       <div class="w-full">
-        <select class="px-2 py-1 border-1 rounded-md placeholder-gray-600 w-full text-sm dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300">
-          <option value="">Kategori 1</option>
-          <option value="">Kategori 2</option>
-          <option value="">Kategori 3</option>
+        <select class="px-2 py-1 border-1 rounded-md placeholder-gray-600 w-full text-sm dark:bg-gray-600 dark:border-gray-500 dark:text-gray-300" v-model="categoryFilter">
+          <option value="">Tüm Kategoriler</option>
+          <option :value="category.id" v-for="(category, index) in categories" :key="index">{{category.title}}</option>
         </select>
       </div>
       <div class="w-full">
-        <button class="px-2 py-1 border-1 rounded-md bg-bsonmezsecondary hover:bg-gray-400 hover:text-white transition-all duration-300 w-full text-sm dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-600">Ara</button>
+        <button @click="filterPosts" class="px-2 py-1 border-1 rounded-md bg-bsonmezsecondary hover:bg-gray-400 hover:text-white transition-all duration-300 w-full text-sm dark:bg-gray-800 dark:border-gray-600 dark:hover:bg-gray-600">Ara</button>
       </div>
     </div>
 
     <div class="flex flex-col gap-2">
 
-      <router-link to="/blog/post">
+      <router-link :to="'/blog/'+blog.seflink" v-for="(blog, index) in blogs.data" :key="index">
       <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">Aermod INP Dosyası Çalıştırmaya Hazırlık.</p>
+        <p class="font-semibold">{{blog.title}}</p>
         <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
       </div>
       </router-link>
-      <router-link to="/">
-      <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">Aermod INP Dosyası ve Kod Yapısı.</p>
-        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
-      </div>
-      </router-link>
-      <router-link to="/">
-      <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">Uzun Yılların Ardından.</p>
-        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
-      </div>
-      </router-link>
-      <router-link to="/">
-      <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık.</p>
-        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
-      </div>
-      </router-link>
-      <router-link to="/">
-      <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">AERMOD'a Giriş.</p>
-        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
-      </div>
-      </router-link>
-      <router-link to="/">
-      <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">Aermod INP Dosyası Çalıştırmaya Hazırlık.</p>
-        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
-      </div>
-      </router-link>
-      <router-link to="/">
-      <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">Aermod INP Dosyası ve Kod Yapısı.</p>
-        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
-      </div>
-      </router-link>
-      <router-link to="/">
-      <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">Uzun Yılların Ardından.</p>
-        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
-      </div>
-      </router-link>
-      <router-link to="/">
-      <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">Aermod İçin Gerekli Dosyalar ve Çalıştırmaya Hazırlık.</p>
-        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
-      </div>
-      </router-link>
-      <router-link to="/">
-      <div class="bg-bsonmezsecondary dark:bg-gray-800 px-4 py-4 w-full items-center rounded-xl hover:bg-gray-300 dark:hover:bg-gray-700 transition-all duration-300">
-        <p class="font-semibold">AERMOD'a Giriş.</p>
-        <p class="text-xs text-gray-600 dark:text-gray-400"><span class="font-semibold">Genel</span> kategorisinde, 12 saat önce.</p>
-      </div>
-      </router-link>
+      <Pagination v-if="blogs && blogs.meta" :currentPage="blogs.meta.current_page" :pageSize="blogs.meta.last_page" :perPage="blogs.meta.per_page" @pageChange="handlePageChange" />
     </div>
-    <div class="flex gap-2 justify-center mt-6">
-      <router-link to="/">
-      <div class="w-8 h-8 bg-bsonmezsecondary inline-flex items-center justify-center rounded-md text-sm hover:bg-gray-400 hover:text-white transition-all duration-300 dark:bg-gray-800 dark:hover:bg-gray-700">ilk</div>
-      </router-link>
-      <router-link to="/">
-      <div class="w-8 h-8 bg-bsonmezsecondary inline-flex items-center justify-center rounded-md text-sm hover:bg-gray-400 hover:text-white transition-all duration-300 dark:bg-gray-800 dark:hover:bg-gray-700">&lt;&lt;</div>
-      </router-link>
-      <router-link to="/">
-      <div class="w-8 h-8 bg-bsonmezsecondary inline-flex items-center justify-center rounded-md text-sm hover:bg-gray-400 hover:text-white transition-all duration-300 dark:bg-gray-800 dark:hover:bg-gray-700">1</div>
-      </router-link>
-      <router-link to="/">
-      <div class="w-8 h-8 bg-bsonmezsecondary inline-flex items-center justify-center rounded-md text-sm hover:bg-gray-400 hover:text-white transition-all duration-300 dark:bg-gray-800 dark:hover:bg-gray-700">2</div>
-      </router-link>
-      <router-link to="/">
-      <div class="w-8 h-8 bg-bsonmezsecondary inline-flex items-center justify-center rounded-md text-sm hover:bg-gray-400 hover:text-white transition-all duration-300 dark:bg-gray-800 dark:hover:bg-gray-700">3</div>
-      </router-link>
-      <router-link to="/">
-      <div class="w-8 h-8 bg-bsonmezsecondary inline-flex items-center justify-center rounded-md text-sm hover:bg-gray-400 hover:text-white transition-all duration-300 dark:bg-gray-800 dark:hover:bg-gray-700">&gt;&gt;</div>
-      </router-link>
-      <router-link to="/">
-      <div class="w-8 h-8 bg-bsonmezsecondary inline-flex items-center justify-center rounded-md text-sm hover:bg-gray-400 hover:text-white transition-all duration-300 dark:bg-gray-800 dark:hover:bg-gray-700">son</div>
-      </router-link>
-    </div>
+
   </div>
 </template>
 
 <script>
+import { useStore } from 'vuex';
+import { computed, ref } from 'vue';
+import Pagination from '@/components/Pagination.vue';
+
 export default {
-  name: 'Blog'
+  name: 'Blog',
+  components: { Pagination },
+  setup() {
+    const store = useStore();
+    const categoryFilter = ref('');
+    const searchPost = ref('');
+    const currentPage = ref(null);
+    const payloadCategory = {
+      params: {
+        type: 2
+      }
+    };
+    const payloadBlog = {
+      params: {
+        type: 1,
+        category: null,
+        search: null,
+        page: null
+      }
+    };
+
+    const filterPosts = () => {
+      payloadBlog.params.category = categoryFilter.value;
+      payloadBlog.params.search = searchPost.value;
+      store.dispatch('setAllBlogs', payloadBlog);
+    };
+
+    const setCategories = () => {
+      store.dispatch('setCategories', payloadCategory);
+    };
+    setCategories();
+
+    const setAllBlogs = () => {
+      store.dispatch('setAllBlogs', payloadBlog);
+    };
+    setAllBlogs();
+
+    const handlePageChange = (page) => {
+      currentPage.value = page;
+      payloadBlog.params.page = currentPage.value;
+      store.dispatch('setAllBlogs', payloadBlog);
+    };
+    handlePageChange();
+
+    const categories = computed(() => store.getters.getCategories);
+    const blogs = computed(() => store.getters.getAllBlogs);
+
+    return { categories, blogs, filterPosts, categoryFilter, searchPost };
+  }
 };
 </script>
